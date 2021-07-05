@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="598dp"
+        android:text="Welcome Back!"
+        android:textStyle="bold"
+        android:textColor="@color/figmaMain"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="540dp"
+        android:text="Please enter your account here"
+        android:textColor="@color/figmaSecondary"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="443dp"
+        android:background="@drawable/layout_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:src="@drawable/ic_message" />
+
+        <EditText
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Email or phone number"
+            android:textColor="@color/figmaSecondary" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="370dp"
+        android:background="@drawable/layout_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:src="@drawable/ic_lock_vector" />
+
+        <EditText
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Password"
+            android:textColor="@color/figmaSecondary" />
+
+        <ImageView
+            android:id="@+id/image_eye"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_show"
+            tools:ignore="InvalidId" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="316dp"
+        android:text="Forgot password?"
+        android:textColor="@color/figmaMain"
+        android:textSize="16dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="192dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/figmaGreen"
+        android:padding="16dp"
+        android:text="Login"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="152dp"
+        android:text="Or continue with"
+        android:textColor="@color/figmaSecondary"
+        android:textSize="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/ic_google_vector"
+        android:padding="16dp"
+        android:src="@drawable/ic_google_vector"
+        app:backgroundTint="@color/figmaOrange"
+        app:icon="@drawable/ic_google_vector"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        android:text="Google"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="53dp"
+        android:text="Don't have any account?"
+        android:textColor="@color/figmaMain" />
+
+    <TextView
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="53dp"
+        android:clickable="true"
+        android:onClick="textSignUpClick"
+        android:text="Sign Up"
+        android:textColor="@color/figmaGreen"
+        android:textStyle="bold" />
+
+</RelativeLayout>
